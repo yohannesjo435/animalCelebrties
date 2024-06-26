@@ -22,10 +22,10 @@ header{
     height: 50px;
     color: #fff;
     align-items: center;
-    padding: 5px 10vw;
+    padding: 20px 5vw;
 }
 .logo{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     color: #f9faf8;
 }
@@ -44,6 +44,10 @@ li{
 ul li a{
     text-decoration: none;
     color: rgb(218, 214, 214);
+}
+li a:hover{
+    font-weight: bolder;
+    color: white;
 
 }
 .hero-section{
@@ -79,13 +83,20 @@ ul li a{
 }
 .sign-up-btn{
     width: 100px;
-    height: 30px;
+    height: 35px;
     color: white;
     font-weight: 900;
     background-color: #3882f6;
     border-radius: 5px;
     border: none;
     margin-top: 15px;
+    font: 20px;
+}
+.sign-up-btn:hover{
+    background-color: #fff;
+    color: #3882f6;
+    border: 2px solid #fff;
+
 }
 
 .card-wrapper{
@@ -104,26 +115,34 @@ ul li a{
     padding: 5vw 0 0 0;
 }
 .card{
-    /* width: 180px;
-    height: 200px; */
+    width: 180px;
+    height: 200px;
     text-align: center;
     font-weight: 300;
-    flex: 1;
-
+    flex: 1 1 200px;
 }
+.card:hover{
+    .card-img-wrapper img{
+        object-fit: cover;
+    }
+}
+
 .card-img-wrapper{
-    /* width: 100%;
-    height: 50%; */
+    width: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 2px solid rgba(0, 102, 255, 0.616); */
     border-radius: 5px;
+    margin-bottom: 5px;
 }
 .card-img-wrapper img{
-    width: 100px;
+    width: 100%;
     height: 100%;
     object-fit: contain;
+    border: 3px solid #3882f6;
+    border-radius: 5px;
 }
 .banner{
     width: 100vw;
@@ -188,7 +207,12 @@ span{
     color: #fff;
     border-radius: 5px;
 }
+.sign-up-btn2:hover{
+    background-color: #fff;
+    color: #3882f6;
+    border: 2px solid #3882f6;
 
+}
 footer{
     height: 50px;
     color: #fff;
@@ -198,8 +222,30 @@ footer{
     justify-content: center;
 }
 @media (max-width: 990px){
+    .hero-section{
+        height: 50vh;
+        align-items: center;
+    }
     .hero-right-section{
         display: none;
+    }
+    .card-wrapper{
+        padding: 3vw;
+        padding-bottom: 0;
+        gap: 3px;
+
+    }
+    .action-section{
+        margin: auto;
+        width: 90vw;
+        display: flex;
+
+
+        margin-top: 70px;
+        margin-bottom: 70px;
+    
+        padding: 25px 35px;
+        border-radius: 5px;
     }
 
 }
